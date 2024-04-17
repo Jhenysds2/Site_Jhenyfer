@@ -1,0 +1,116 @@
+/* Estilo Geral */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.jheny-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00ff08;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* Estilo do Cabeçalho */
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #c6c6c6;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .jheny-contato button:hover {
+  box-shadow: 0px 0px 8px #00ff088a;
+}
+
+.jheny-contato button:hover {
+  box-shadow: 0px 0px 8px #00ff088a;
+  transform: scale(1.05);
+}
+
+/* Estilo do Topo do Site */
+section.Topo-do-site {
+  padding: 100px 5%;
+}
+
+section.Topo-do-site.flex {
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+}
+
+.Topo-do-site h1 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 30px;
+}
+
+.Topo-do-site .txt-topo-site h1 span {
+  color: #00ff08;
+  font-size: 84px;
+}
+
+.Topo-do-site .txt-topo-site p {
+  color: #fff;
+  margin: 40px 0%;
+  margin-right: 100px;
+}
+
+.Topo-do-site .img-topo-site img{
+position: relative;
+animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
